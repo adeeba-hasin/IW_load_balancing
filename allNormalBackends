@@ -1,0 +1,9 @@
+server {
+    listen 80;
+    
+    location / {
+        return 200 "Server works.\n";
+    }
+
+    error_page  405     =200 $uri;
+}
